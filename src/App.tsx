@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import About from './components/About';
 
 function App() {
   useEffect(() => {
@@ -15,8 +16,9 @@ function App() {
   }, []);
   return (
     <div>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
+      <About />
     </div>
   )
 }

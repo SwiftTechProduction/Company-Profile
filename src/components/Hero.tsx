@@ -27,7 +27,7 @@ const Hero = () => {
                     <Circle className='text-green-500 w-5 h-5' />
                 </div>
                 <div className='flex flex-col lg:grid lg:grid-cols-2 gap-6
-                    lg:gap-58 items-center lg:items-start'>
+                    lg:gap-68 items-center lg:items-start'>
                     <div 
                         data-aos='zoom-in'
                         data-aos-delay='200'
