@@ -11,25 +11,25 @@ const Footer = () => {
         { icon: FaLinkedin, href: '#', color: "hover:bg-blue-600" }
     ];
     const quickLinks = [
-        { label: "Home", href: "#" },
-        { label: "Contact Us", href: "#" },
-        { label: "Company", href: "#" },
-        { label: "Services", href: "#" },
-        { label: "Contact", href: "#" }
+        { label: "Home", href: "/" },
+        { label: "About Us", href: "/about" },
+        { label: "Services", href: "/services" },
+        { label: "Teams", href: "/teams" },
+        { label: "Blogs", href: "/blogs" }
     ];
     const services = [
-        { label: "UI/UX Design", href: "#" },
-        { label: "Web Development", href: "#" },
-        { label: "Photography", href: "#" },
-        { label: "Branding", href: "#" },
-        { label: "Digital Marketing", href: "#" }
+        { label: "Swift Tech Computer", href: "#" },
+        { label: "Mobile Phone & Electronics Store", href: "#" },
+        { label: "Master Dealer Segway Motor Tabanan & Kuta - Bali", href: "#" },
+        { label: "Tateru Lifestyle", href: "#" },
+        { label: "PT. Kiyona Beauty International", href: "#" }
     ];
     const contactInfo = [
-        { icon: Phone, text: '+123 456 7890', color: 'text-pink-500' },
-        { icon: Mail, text: 'info@proservice.com', color: 'text-yellow-500' },
+        { icon: Phone, text: '081 99 11 99 11 3', color: 'text-pink-500' },
+        { icon: Mail, text: 'lukasherdian@indomaret.co.id', color: 'text-yellow-500' },
         {
             icon: MapPin,
-            text: "123 Lorem ipsum dolor sit amet",
+            text: "Sovereign Plaza 12th Floor, Jakarta Selatan",
             color: "text-green-500",
             multiline: true
         }
@@ -59,9 +59,8 @@ const Footer = () => {
                             </span>
                         </div>
                         <p className='text-gray-300 leading-relaxed'>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aut, autem reprehenderit fugit, incidunt error quam quaerat
-                            vero nisi aliquam veritatis accusantium et nostrum dolore.
+                            Creating premium products, trusted businesses, 
+                            and meaningful experiences across technology, lifestyle, and beauty.
                         </p>
                         <div className='flex gap-4'>
                             {socialLinks.map((social, idx) => (
@@ -153,7 +152,7 @@ const Footer = () => {
                 </div>
                 <div className='border-t border-gray-700 pt-8 text-center'>
                     <p className='text-gray-400 flex items-center justify-center gap-1'>
-                        @2026 Lorem
+                        @2026 PT Herdian Jaya Teknologi
                         <Heart className='w-4 h-4 text-pink-500 fill-current' />
                     </p>
                 </div>

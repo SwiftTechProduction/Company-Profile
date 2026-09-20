@@ -13,8 +13,11 @@ const LoginPage = () => {
 
     const navigate = useNavigate();
 
+
     const handleLogin = async () => {
+
         try {
+
             setLoading(true);
             setError("");
 
@@ -27,13 +30,19 @@ const LoginPage = () => {
             navigate("/create-blog");
 
         } catch (error) {
+
             console.log(error);
 
             setError("Email or password is incorrect.");
+
         } finally {
+
             setLoading(false);
+
         }
+
     };
+
 
     return (
 
@@ -45,27 +54,53 @@ const LoginPage = () => {
 
             <div className='max-w-xl mx-auto'>
 
+
                 {/* TITLE */}
                 <div
                     className='mb-8 md:mb-10 text-center'
                     data-aos='fade-down'
                 >
+
                     <h2 className='text-3xl sm:text-4xl md:text-5xl text-gray-900'>
+
                         Account{" "}
+
                         <span className='font-bold text-black'>
-                            Login<span className='text-green-500'>.</span>
+
+                            Login
+
+                            <span className='text-green-500'>
+                                .
+                            </span>
+
                         </span>
+
                     </h2>
 
+
                     <div className='flex gap-3 mt-4 justify-center'>
-                        <Circle className='text-pink-500 w-5 h-5' />
-                        <Circle className='text-yellow-500 w-5 h-5' />
-                        <Circle className='text-green-500 w-5 h-5' />
+
+                        <Circle
+                            className='text-pink-500 w-5 h-5'
+                        />
+
+                        <Circle
+                            className='text-yellow-500 w-5 h-5'
+                        />
+
+                        <Circle
+                            className='text-green-500 w-5 h-5'
+                        />
+
                     </div>
 
+
                     <p className='text-gray-600 mt-5'>
+
                         Login to manage and create blog articles.
+
                     </p>
+
                 </div>
 
 
@@ -78,65 +113,92 @@ const LoginPage = () => {
                     data-aos='fade-up'
                 >
 
+
                     {/* EMAIL */}
                     <div className='mb-5'>
+
                         <label
                             className='block text-gray-700 font-medium mb-2'
                         >
                             Email
                         </label>
 
+
                         <input
                             type='email'
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) =>
+                                setEmail(e.target.value)
+                            }
                             placeholder='Enter your email'
                             className='w-full px-4 py-3
                             border border-gray-200 rounded-xl
                             outline-none
                             focus:border-pink-400'
                         />
+
                     </div>
 
 
                     {/* PASSWORD */}
                     <div className='mb-6'>
+
                         <label
                             className='block text-gray-700 font-medium mb-2'
                         >
                             Password
                         </label>
 
+
                         <input
                             type='password'
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(e) =>
+                                setPassword(e.target.value)
+                            }
                             placeholder='Enter your password'
                             className='w-full px-4 py-3
                             border border-gray-200 rounded-xl
                             outline-none
                             focus:border-pink-400'
                         />
+
                     </div>
 
+
+                    {/* ERROR */}
                     {error && (
-                        <p className="text-red-500 text-sm text-center mb-4">
+
+                        <p className='text-red-500 text-sm text-center mb-4'>
+
                             {error}
+
                         </p>
+
                     )}
-                    
+
+
                     {/* BUTTON */}
                     <button
                         onClick={handleLogin}
+                        disabled={loading}
                         className='w-full px-6 py-3
                         bg-pink-500 hover:bg-pink-600
                         text-white rounded-full font-medium
                         transition-all shadow-md hover:shadow-lg
-                        flex items-center justify-center gap-2'
+                        flex items-center justify-center gap-2
+                        disabled:opacity-50
+                        disabled:cursor-not-allowed'
                     >
-                        Login
+
+                        {loading
+                            ? "Logging in..."
+                            : "Login"
+                        }
+
 
                         <LogIn className='w-5 h-5' />
+
                     </button>
 
                 </div>
@@ -151,6 +213,7 @@ const LoginPage = () => {
                 w-20 h-20 rounded-full opacity-50'
             />
 
+
             <div
                 className='hidden md:block absolute border-2
                 border-green-500 top-40 right-10
@@ -158,7 +221,9 @@ const LoginPage = () => {
             />
 
         </section>
+
     );
+
 };
 
 export default LoginPage;

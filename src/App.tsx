@@ -10,6 +10,7 @@ import Services from './components/Services';
 import TeamsPage from './pages/TeamsPage';
 import LoginPage from './pages/LoginPage';
 import CreateBlogPage from './pages/CreateBlog';
+import BlogListPage from './pages/BlogListPage';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        
+
 
         <Route path="/" element={<Home />} />
 
@@ -37,7 +38,9 @@ function App() {
 
         <Route path="/login" element={<LoginPage />} />
 
-        <Route path="/create-blog" element={<CreateBlogPage />}/>
+        <Route path="/create-blog" element={<CreateBlogPage />} />
+
+        <Route path="/blogs" element={<BlogListPage />} />
 
       </Routes>
       <Footer />

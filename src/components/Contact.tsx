@@ -1,5 +1,5 @@
 import { Circle, Mail, MapPinIcon, Phone, Send } from 'lucide-react'
-import contactImg from '../assets/hero.jpg'
+import contactImg from '../assets/konter10.png'
 
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
             iconBg: 'bg-pink-100',
             iconColor: 'text-pink-600',
             title: 'Email',
-            content: 'info@example.com',
+            content: 'lukasherdian@indomaret.co.id',
             aosDelay: '200'
         },
         {
@@ -19,7 +19,7 @@ const Contact = () => {
             iconBg: 'bg-yellow-100',
             iconColor: 'text-yellow-600',
             title: 'Phone',
-            content: '+123 456 7890',
+            content: '081 99 11 99 11 3',
             aosDelay: '200'
         },
         {
@@ -28,7 +28,7 @@ const Contact = () => {
             iconBg: 'bg-green-100',
             iconColor: 'text-green-600',
             title: 'Address',
-            content: '123 Main Street, City, Country',
+            content: 'PT. Kiyona Beauty International - Sovereign Plaza 12th Floor, Jakarta Selatan',
             aosDelay: '300'
         }
     ];
