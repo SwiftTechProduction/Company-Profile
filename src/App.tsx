@@ -1,13 +1,16 @@
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import About from './components/About';
-import WhyOurCompany from './components/WhyOurCompany';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './pages/About';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Services from './components/Services';
+import TeamsPage from './pages/TeamsPage';
+import LoginPage from './pages/LoginPage';
+import CreateBlogPage from './pages/CreateBlog';
+
 
 function App() {
   useEffect(() => {
@@ -19,15 +22,26 @@ function App() {
     });
   }, []);
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <About />
-      <WhyOurCompany />
-      <Services />
-      <Contact />
+      <Routes>
+        
+
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+
+        <Route path="/services" element={<Services />} />
+
+        <Route path="/teams" element={<TeamsPage />} />
+
+        <Route path="/login" element={<LoginPage />} />
+
+        <Route path="/create-blog" element={<CreateBlogPage />}/>
+
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 

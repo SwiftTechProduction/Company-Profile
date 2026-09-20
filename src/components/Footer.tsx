@@ -50,11 +50,11 @@ const Footer = () => {
                         <div className='flex items-center text-2xl font-bold'>
                             <div className='w-10 h-10 flex items-center justify-center
                             rounded-full border-4 border-pink-600 text-pink-600 mr-2'>
-                                P
+                                H
                             </div>
                             <span>
-                                ro<span className='text-yellow-500'>
-                                    Service
+                                <span className='text-yellow-500'>
+                                    Group
                                 </span>
                             </span>
                         </div>

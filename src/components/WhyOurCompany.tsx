@@ -30,7 +30,7 @@ const WhyOurCompany = () => {
                     order-2 lg:order-1'
                     >
                         <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl
-                        h-[650px] md:h-[500px] lg:h-[520px] overflow-hidden
+                        h-[650px] md:h-[500px] lg:h-[620px] overflow-hidden
                         bg-gray-50 shadow-lg md:shadow-xl 
                         top-0 z-0 rounded-[30%_10%_20%_70%/60%_30%_70%_30%]"
                             data-aos='fade-right'
@@ -56,10 +56,10 @@ const WhyOurCompany = () => {
                                         <div>
                                             <h3 className="text-lg sm:text-xl font-semibold
                                             text-gray-900 mb-2">
-                                                Excellence Guaranted
+                                                Luxury Quality
                                             </h3>
                                             <p className="text-gray-600 text-sm sm:text-base">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Carefully selected products focused on quality, performance, and lasting value.
                                             </p>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@ const WhyOurCompany = () => {
                                                 Trust & Reliability
                                             </h3>
                                             <p className="text-gray-600 text-sm sm:text-base">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Building long-term relationships through reliable products and professional service.
                                             </p>
                                         </div>
                                     </div>
@@ -104,10 +104,10 @@ const WhyOurCompany = () => {
                                         <div>
                                             <h3 className="text-lg sm:text-xl font-semibold
                                             text-gray-900 mb-2">
-                                                Innovation Driven
+                                                Customer Focused
                                             </h3>
                                             <p className="text-gray-600 text-sm sm:text-base">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                We aim to understand each customer's needs and provide the right solution.
                                             </p>
                                         </div>
                                     </div>
@@ -131,11 +131,11 @@ const WhyOurCompany = () => {
                                 </div>
                                 <h3 className="text-xl sm:text-2xl font-bold mb-3
                                     sm:mb-4">
-                                    98% Customer Satisfication
+                                    99.9% Customer Satisfication
                                 </h3>
                                 <p className="mb-4 sm:text-base">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Nihil ex, ad facilis et molestiae sequi repudiandae 
+                                    “Herdian Group has been a reliable partner for our technology needs,
+                                    providing quality products and responsive service.”
                                 </p>
                                 <div className="flex justify-center gap-3 sm:gap-4">
                                     <div
@@ -143,8 +143,8 @@ const WhyOurCompany = () => {
                                         data-aos='fade-up'
                                         data-aos-delay='400'
                                     >
-                                        <div className="text-2xl sm:text-3xl font-bold">500+</div>
-                                        <div className="text-xs sm:text-sm">Project Completed</div>
+                                        <div className="text-2xl sm:text-3xl font-bold">300+</div>
+                                        <div className="text-xs sm:text-sm">Brands Distributed</div>
                                     </div>
                                     <div
                                         className="text-center"
@@ -159,8 +159,8 @@ const WhyOurCompany = () => {
                                         data-aos='fade-up'
                                         data-aos-delay='400'
                                     >
-                                        <div className="text-2xl sm:text-3xl font-bold">99%</div>
-                                        <div className="text-xs sm:text-sm">Success Rate</div>
+                                        <div className="text-2xl sm:text-3xl font-bold">Multiple</div>
+                                        <div className="text-xs sm:text-sm">Business Sector</div>
                                     </div>
                                 </div>
                             </div>

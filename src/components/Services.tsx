@@ -1,16 +1,18 @@
-import { ArrowRight, Brush, Camera, CheckCircle, Circle, Code } from 'lucide-react';
-import React, { act, useState } from 'react'
-import service1 from '../assets/hero.jpg'
+import { ArrowRight, CheckCircle, Circle, Computer, Droplets, Shirt } from 'lucide-react';
+import { useState } from 'react'
+import service1 from '../assets/swifttech.png'
+import service2 from '../assets/tateru.jpg'
+import service3 from '../assets/kiyona.png'
 
 const Services = () => {
     const [activeService, setActiveService] = useState(1);
     const services = [
         {
             id: 1,
-            icon: <Brush className='w-5 h-5 sm:w-6 sm:h-6'/>,
-            title: "UI/UX Design",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            features: ["User Research", "Wireframing", "Prototyping", "UI"], 
+            icon: <Computer className='w-5 h-5 sm:w-6 sm:h-6'/>,
+            title: "Swift Tech Computer",
+            desc: "Aesthetic PC Specialist",
+            features: ["DIY High End Water Cooling PC", "Laptop", "Mobile Phones", "Electronics"], 
             color: "bg-pink-400",
             butColor: "bg-pink-400 hover:bg-pink-500",
             iconColor: "text-pink-100",
@@ -18,25 +20,25 @@ const Services = () => {
         },
         {
             id: 2,
-            icon: <Code className='w-5 h-5 sm:w-6 sm:h-6'/>,
-            title: "Web Development",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            features: ["User Research", "Wireframing", "Prototyping", "UI"], 
+            icon: <Shirt className='w-5 h-5 sm:w-6 sm:h-6'/>,
+            title: "Tateru Lifestyle",
+            desc: "Premium Japanese Ready to Wear",
+            features: ["Japanese Aesthetic", "Premium Fabrics", "Limited Collections", "Refined Craftmanship"], 
             color: "bg-yellow-400",
             butColor: "bg-yellow-400 hover:bg-yellow-500",
             iconColor: "text-yellow-100",
-            image: service1        
+            image: service2        
         },
         {
             id: 3,
-            icon: <Camera className='w-5 h-5 sm:w-6 sm:h-6'/>,
-            title: "Photography",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            features: ["User Research", "Wireframing", "Prototyping", "UI"], 
+            icon: <Droplets className='w-5 h-5 sm:w-6 sm:h-6'/>,
+            title: "Kiyona Beauty",
+            desc: "Affordable Luxury Japanese Skincare",
+            features: ["88.8% Rice Bran Water", "0% Added Water", "Powered by Sacran & Hydrafence", "Imported raw from Japan, France & Swiss"], 
             color: "bg-green-400",
             butColor: "bg-green-400 hover:bg-green-500",
             iconColor: "text-green-100",
-            image: service1        
+            image: service3        
         }
     ]
   return (
@@ -178,7 +180,7 @@ const Services = () => {
                             <div className='w-full h-60 sm:72 md:h-80 overflow-hidden
                                 shadow-lg rounded-xl md:rounded-2xl'>
                                 <img src={ser.image} alt={ser.title} 
-                                    className='object-cover w-full transform
+                                    className='object-contain w-full h-full transform
                                     hover:scale-105 transition-transform duration-700'/>
                             </div>
                         </div>    

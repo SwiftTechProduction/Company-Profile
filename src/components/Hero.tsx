@@ -13,9 +13,9 @@ const Hero = () => {
                     className='text-4xl sm:text-5xl text-gray-900 text-center
                     lg:text-left'
                     data-aos='fade-right'>
-                    Professional{" "}
+                    Beyond <span className='text-yellow-500'>Luxury</span>,{" "}
                     <span className='font-bold text-black block lg:inline'>
-                        Sevice<span className='text-green-500'>.</span>
+                        it becomes your <span className='text-green-500'>standard</span>
                     </span>
                 </h2>
                 <div
@@ -40,10 +40,11 @@ const Hero = () => {
                             </span>
                         </div>
                         <h3 className='ml-4 text-lg font-semibold text-gray-800'>
-                            Service Subtitle One
+                            Technology & Electronics
                         </h3>
                         <p className='ml-4 text-gray-500 text-sm mt-2'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Distribution and retail solutions for computers, smartphones,
+                            electronics.
                         </p>
                     </div>
                     <div 
@@ -58,10 +59,11 @@ const Hero = () => {
                             </span>
                         </div>
                         <h3 className='ml-4 text-lg font-semibold text-gray-800'>
-                            Service Subtitle Two
+                            Consumer Brands
                         </h3>
                         <p className='ml-4 text-gray-500 text-sm mt-2'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Developing consumer focused brands and products across beauty and
+                            lifestyle categories.
                         </p>
                     </div>
                 </div>
