@@ -1,4 +1,3 @@
-import React from 'react'
 import about from '../assets/hero.jpg'
 import { ArrowRight, Circle, Target, Users } from 'lucide-react'
 

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import About from './components/About';
 import WhyOurCompany from './components/WhyOurCompany';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <About />
       <WhyOurCompany />
       <Services />
+      <Contact />
     </div>
   )
 }
