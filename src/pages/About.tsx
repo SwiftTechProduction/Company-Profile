@@ -1,5 +1,5 @@
 import about from '../assets/fotoprofile.png'
-import { ArrowRight, Circle, History, Sparkles } from 'lucide-react'
+import { Circle, History, Sparkles } from 'lucide-react'
 
 const About = () => {
     return (
